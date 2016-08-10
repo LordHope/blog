@@ -10,11 +10,11 @@ title:        Lord Hope's Blog
 subtitle:     Talk  is  cheap,  write  here.
 description:  //TODO
 keywords:     blog
-language:     "en" # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
+language:     "en"
 
 baseurl:      "" # the subpath of your site, e.g. /blog
-url:          "http://i77.io/blog" # the base hostname & protocol for your site. Have a look at robots.txt as well!
-permalink:    /blog/:categories/:title
+url:          "http://i77.io/blog"
+permalink:    /:categories/:title
 cover:        /assets/img/home_cover.jpg
 
 # Build settings
