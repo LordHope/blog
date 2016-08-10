@@ -36,8 +36,8 @@ apt-get install stunnel4 -y
 
 找到`TAG: http_port`注释，把其下方的
 
-> Squid normally listens to port 3128
-> http_port 3128
+> Squid normally listens to port 3128  
+> http_port 3128  
 
 中`http_port`的值`3128`修改为`127.0.0.1:3128`，使得 Squid 只能被本地（127.0.0.1）访问。此处可以修改为监听其他端口号。
 
@@ -53,10 +53,10 @@ htpasswd -c /etc/squid3/squid.passwd <登录用户名>
 
 再次打开Squid配置文件`/etc/squid3/squid.conf`，找到`TAG: auth_param`注释，在其下方添加，
 
-> auth_param basic program /usr/lib/squid3/basic_ncsa_auth /etc/squid3/squid.passwd
-> auth_param basic children 5
-> auth_param basic realm Squid proxy-caching web server
-> auth_param basic credentialsttl 2 hours
+> auth_param basic program /usr/lib/squid3/basic_ncsa_auth /etc/squid3/squid.passwd  
+> auth_param basic children 5  
+> auth_param basic realm Squid proxy-caching web server  
+> auth_param basic credentialsttl 2 hours  
 > auth_param basic casesensitive off
 
 找到`TAG: acl`，在其下方添加，
@@ -65,7 +65,7 @@ htpasswd -c /etc/squid3/squid.passwd <登录用户名>
 
 找到`TAG: http_access`，在其下方添加，使得只允许经过认证的用户访问，
 
-> http_access deny !ncsa_users
+> http_access deny !ncsa_users  
 > http_access allow ncsa_users
 
 ### 3. 重启Squid
