@@ -1,6 +1,6 @@
 ---
 layout:            post
-title:             "使用 Squid 搭建 Https 代理"
+title:             "使用 Squid 搭建 Https 代理器"
 date:              2016-08-10 11:21:00 +0800
 author:            Lord Hope
 category:          Tutorials

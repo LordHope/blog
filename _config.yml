@@ -7,7 +7,7 @@
 
 # Site settings
 title:        Lord Hope's Blog
-subtitle:     Talk  is  cheap,  write  here.
+subtitle:     Not all those who wander are lost.
 description:  //TODO
 keywords:     blog
 language:     "en"
@@ -29,3 +29,4 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jemoji
